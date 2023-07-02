@@ -20,7 +20,7 @@ source "amazon-ebs" "amazon-linux" {
   region        = "ap-southeast-2"
   ami_name      = "ami-version-1.0.1-{{timestamp}}"
   instance_type = "t2.micro"
-  # source_ami    = "ami-06cd706b6bacee637" - Does not work with Amazon Linux 2023 versions of AMIs
+  # source_ami    = "ami-06cd706b6bacee637" - Does not work with Amazon Linux 2023 versions of AMIs (inspector-agent from the provisioner.sh)
   source_ami    = "ami-0d6294dcaac5546e4"
   ssh_username  = "ec2-user"
   ami_regions = [
